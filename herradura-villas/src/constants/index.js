@@ -66,25 +66,25 @@ export const socialLinks = [
     {
         id:'social-links-1',
         alt:'facebook',
-        icon:'',
+        icon:'../assets/facebook.svg',
         link:'',
     },
     {
         id:'social-links-2',
         alt:'youtube',
-        icon:'',
+        icon:'../assets/youtube.svg',
         link:'',
     },
     {
         id:'social-links-3',
         alt:'instagram',
-        icon:'',
+        icon:'../assets/instagram.svg',
         link:'',
     },
     {
         id:'social-links-4',
         alt:'twitter',
-        icon:'',
+        icon:'../assets/twitter.svg',
         link:'',
     },
 ]
