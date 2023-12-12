@@ -41,28 +41,28 @@ export const gallery = [
 export const faq = [
     {
         id: 'faq-1',
-        title: '',
-        description: '',
+        title: 'Accordion-FAQs--1',
+        description: 'Lorem ipsum dolor sit amet consectetur. Diam faucibus nulla lorem feugiat. Nec placerat dictum lacus eleifend nunc. Ut justo sit cras lectus quis tortor.',
     },
     {
         id: 'faq-2',
-        title: '',
-        description: '',
+        title: 'Accordion-FAQs--2',
+        description: 'Lorem ipsum dolor sit amet consectetur. Diam faucibus nulla lorem feugiat. Nec placerat dictum lacus eleifend nunc. Ut justo sit cras lectus quis tortor.',
     },
     {
         id: 'faq-3',
-        title: '',
-        description: '',
+        title: 'Accordion-FAQs--3',
+        description: 'Lorem ipsum dolor sit amet consectetur. Diam faucibus nulla lorem feugiat. Nec placerat dictum lacus eleifend nunc. Ut justo sit cras lectus quis tortor.',
     },
     {
         id: 'faq-4',
-        title: '',
-        description: '',
+        title: 'Accordion-FAQs--4',
+        description: 'Lorem ipsum dolor sit amet consectetur. Diam faucibus nulla lorem feugiat. Nec placerat dictum lacus eleifend nunc. Ut justo sit cras lectus quis tortor.',
     },
     {
         id: 'faq-5',
-        title: '',
-        description: '',
+        title: 'Accordion-FAQs--5',
+        description: 'Lorem ipsum dolor sit amet consectetur. Diam faucibus nulla lorem feugiat. Nec placerat dictum lacus eleifend nunc. Ut justo sit cras lectus quis tortor.',
     },
 ];
 export const socialLinks = [

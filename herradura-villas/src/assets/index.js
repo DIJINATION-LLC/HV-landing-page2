@@ -8,6 +8,8 @@ import message from './Message.svg';
 import phone from './Phone.svg';
 import opportunity from './Opportunity.png';
 import logo from './Logo.png';
+import upArrow from './upArrow.svg';
+import downArrow from './downArrow.svg';
 
 export{
     facebook,
@@ -20,4 +22,6 @@ export{
     phone,
     opportunity,
     logo,
+    upArrow,
+    downArrow,
 };
