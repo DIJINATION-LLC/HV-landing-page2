@@ -12,7 +12,9 @@ const FAQItem = ({ title, description, isOpen, toggleItem }) => {
                 src={isOpen ? downArrow : upArrow}
                 alt="Dropdown Icon"/>
             </div>
-            
+            <div className={`faq-description ${isOpen ? 'open': ''}`}>
+
+            </div>
         </div>
     );
 };
