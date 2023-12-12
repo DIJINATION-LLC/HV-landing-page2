@@ -12,7 +12,7 @@ const Bulletin = () => (
           socialLinks.map((links) =>
           (<div key={links.id}>
             <a href={links.link}>
-              <img src={links.icon} alt={links.alt} className='h-7 w-7 ' />
+              <img src={links.icon} alt={links.alt} className='h-7 w-7' />
             </a>
           </div>
           )
