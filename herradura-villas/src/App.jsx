@@ -8,6 +8,8 @@ export const App = () => (
   <div className='w-full overflow-hidden'>
     <div className={`${styles.flexCenter}`}>
       <Bulletin />
+      </div> 
+      <div>
       <Navbar />
     </div>
     <div className=''>

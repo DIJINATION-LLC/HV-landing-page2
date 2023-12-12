@@ -3,13 +3,13 @@ const styles = {
 
     heading1:"font-poppins font-bold text-white xs:text-[46px] text-[38px] xs:leading-[50px] leading-[40px]",
     heading2:"font-poppins font-bold text-yaleblue xs:text-[36px] text-[28px] xs:leading-[40px] leading-[30px]",
-    heading3:"font-poppins font-semibold text-black xs:text-[30px] text-[22px] xs:leading-[40px] leading-[30px]",
+    heading3:"font-poppins font-semibold text-black xs:text-[30px] text-[22px] xs:leading-[35px] leading-[25px]",
     heading4:"font-poppins font-semibold text-black xs:text-[24px] text-[16px] xs:leading-[40px] leading-[30px]",
-    heading5:"font-poppins font-semibold text-black xs:text-[18px] text-[12px] xs:leading-[40px] leading-[30px]",
-    paragraph:"font-poppins font-normanl text-black xs:text-[18px] text-[12px] xs:leading-[40px] leading-[30px]",
+    heading5:"font-poppins font-semibold text-black xs:text-[18px] text-[12px] xs:leading-[24px] leading-[24px]",
+    paragraph:"font-poppins font-normanl text-black xs:text-[18px] text-[12px] xs:leading-[24px] leading-[24px]",
 
     flexCenter:"flex justify-center items-center",
-    flexStart:"flex items-start",
+    flexStart:"flex justify-center items-start",
 
     paddingX:"sm:px-14 px-6",
     paddingY:"sm:py-14 py-6",

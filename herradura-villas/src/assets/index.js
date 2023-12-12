@@ -7,9 +7,10 @@ import email from './Email.svg';
 import message from './Message.svg';
 import phone from './Phone.svg';
 import opportunity from './Opportunity.png';
-import logo from './Logo.png';
+import logo from './Logo.svg';
 import upArrow from './upArrow.svg';
 import downArrow from './downArrow.svg';
+import logoFooter from './Logo-02.svg'
 
 export{
     facebook,
@@ -24,4 +25,5 @@ export{
     logo,
     upArrow,
     downArrow,
+    logoFooter,
 };

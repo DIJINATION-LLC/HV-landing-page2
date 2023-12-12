@@ -19,10 +19,28 @@ const FAQItem = ({ title, description, isOpen, toggleItem }) => {
     );
 };
 
-export const FAQ = () => (
-    <div>
-
-    </div>
-)
-
+const FAQ = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+    const toggleItem = (index) => {
+        setActiveIndex(index == activeIndex ? null : index);
+    };
+    return (
+        <div className=''>
+            <div className=''>
+                <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
+            </div>
+            <div className="">
+                {faq.map((faq, index) => (
+                    <FAQItem
+                        key={index}
+                        title={faq.title}
+                        description={faq.description}
+                        isOpen={index === activeIndex}
+                        toggleItem={() => toggleItem(index)}
+                    />
+                ))}
+            </div>
+        </div>
+    );
+};
 export default FAQ
