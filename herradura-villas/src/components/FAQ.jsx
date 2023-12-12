@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { faq } from '../constants'
 import styles from '../style'
-import { upArro,downArroww } from '../assets';
+import { upArrow,downArrow } from '../assets';
 
 const FAQItem = ({ title, description, isOpen, toggleItem }) => {
     return (
@@ -12,6 +12,7 @@ const FAQItem = ({ title, description, isOpen, toggleItem }) => {
                 src={isOpen ? downArrow : upArrow}
                 alt="Dropdown Icon"/>
             </div>
+            
         </div>
     );
 };
