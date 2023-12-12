@@ -5,11 +5,11 @@ export default  {
   theme: {
     extend: {
       colors: {
-        'white': '#ffffff',
-        'black': '#3a3a3a',
-        'yaleblue': '#0b5394',
-        'goldenbrowen': '#ffb700',
-        'grey': '#d8d8d8',
+        "white": "#ffffff",
+        "black": "#3a3a3a",
+        "yaleblue": "#0b5394",
+        "goldenbrowen": "#ffb700",
+        "grey": "#d8d8d8",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
