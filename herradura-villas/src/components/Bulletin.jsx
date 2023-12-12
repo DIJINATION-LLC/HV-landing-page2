@@ -4,7 +4,8 @@ import styles from '../style';
 
 const Bulletin = () => (
   <div className="flex flex-row w-full bg-yaleblue justify-center">
-    <div className={`${styles.boxWidth} flex items-center gap-[20px]`}>
+    <div className={`${styles.boxWidth} flex justify-between`}>
+      <div className='flex items-center gap-[20px]'>
       {
         socialLinks.map((links) =>
         (<div key={links.id}>
@@ -14,11 +15,12 @@ const Bulletin = () => (
         </div>
         )
         )
-      }
-    </div>
+      }</div>
+      
     <div className='flex flex-row'>
       <p className="text-white">Call us:</p>
       <a href='tel:' className="text-white"> +1-xxx-xxxx</a>
+    </div>
     </div>
   </div>
 
