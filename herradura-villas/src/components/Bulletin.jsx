@@ -16,9 +16,9 @@ const Bulletin = () => (
         )
       }
     </div>
-    <div className='flex'>
+    <div className='flex-row '>
       <p className="text-white">Call us:</p>
-      <a href='tel:' className="text-white"> +1xxx-xxxx</a>
+      <a href='tel:' className="text-white"> +1-xxx-xxxx</a>
     </div>
   </div>
 

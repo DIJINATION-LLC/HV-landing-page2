@@ -1,8 +1,10 @@
 import { Bulletin, Navbar, Hero, Opportunity, Gallery, CTA, FAQ, LeadGen, Footer } from './components'
 import styles from './style'
+import { BrowserRouter } from 'react-router-dom';
 
 
 export const App = () => (
+  <BrowserRouter>
   <div className='w-full overflow-hidden'>
     <div className={`${styles.flexCenter}`}>
       <Bulletin />
@@ -28,6 +30,7 @@ export const App = () => (
       <Footer />
     </div>
   </div>
+  </BrowserRouter>
 )
 
 export default App
