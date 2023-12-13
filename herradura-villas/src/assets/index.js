@@ -6,12 +6,13 @@ import user from './User.svg';
 import email from './Email.svg';
 import message from './Message.svg';
 import phone from './Phone.svg';
-import opportunity from './Opportunity.png';
+import opportunity from './Opportunity.webp';
 import logo from './Logo.svg';
 import upArrow from './upArrow.svg';
 import downArrow from './downArrow.svg';
-import logoFooter from './Logo-02.svg'
-import docsvault from './DocsVault.webp'
+import logoFooter from './Logo-02.svg';
+import docsvault from './DocsVault.webp';
+import herobanner from './HeroBanner.webp';
 
 export{
     facebook,
@@ -28,4 +29,5 @@ export{
     downArrow,
     logoFooter,
     docsvault,
+    herobanner,
 };

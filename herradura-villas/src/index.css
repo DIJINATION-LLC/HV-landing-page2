@@ -8,5 +8,43 @@
 
 
 :root {
+  /*Colors*/
+  --yale-blue: #0B5394;
+  --golden-brown: #ffb700;
+  --blue-gradient: linear-gradient(180deg, #0B5394 0%, #1F2A44 100%);
+  --light-golden-gradient: linear-gradient(0deg, #9A7A1A 0%, #C8A82A 100%);
+  --white: #ffffff;
+  --black: #3a3a3a;
+  --gradient-box: linear-gradient(180deg, #F9FCFF 0%, #FFF 100%);
+
+
+
+  /*font family*/
   font-family: Poppins;
+}
+
+.bg-blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.bg-light-golden-gradient {
+  background: var(--light-golden-gradient);
+}
+
+.bg-gradient-box {
+  background: var(--gradient-box);
+}
+
+.bg-docs-vault {
+  background-image: url(../src/assets/DocsVault.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-hero-banner {
+  background-image: url(../src/assets/HeroBanner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

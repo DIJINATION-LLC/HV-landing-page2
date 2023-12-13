@@ -7,12 +7,12 @@ const Bulletin = () => (
 
     <div className={`${styles.boxWidth} flex justify-between p-[10px]`}>
 
-      <div className='flex items-center gap-[20px]'>
+      <div className='flex items-center gap-[20px] '>
         {
           socialLinks.map((links) =>
           (<div key={links.id}>
             <a href={links.link}>
-              <img src={links.icon} alt={links.alt} className='h-7 w-7' />
+              <img src={links.icon} alt={links.alt} className={`h-7 w-7  ${styles} transition-all transform hover:scale-105 ease-in-out`} />
             </a>
           </div>
           )

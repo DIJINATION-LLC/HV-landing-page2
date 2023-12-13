@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default  {
+export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
@@ -10,8 +10,6 @@ export default  {
         "yaleblue": "#0b5394",
         "goldenbrown": "#ffb700",
         "grey": "#d8d8d8",
-        "blue-gradient": "linear-gradient(180deg, #0B5394 0%, #1F2A44 100%)",
-        "light-golden-gradient":"linear-gradient(0deg, #9A7A1A 0%, #C8A82A 100%)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
