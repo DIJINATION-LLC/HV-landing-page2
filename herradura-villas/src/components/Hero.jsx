@@ -6,6 +6,7 @@ import { slides } from '../constants'
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = React.useState(0);
+
     const sliderSetting = {
         dots: true,
         infinite: true,
@@ -33,14 +34,15 @@ const Hero = () => {
         ),
         beforeChange: (current, next) => setCurrentSlide(next),
     };
-    
+
     const heroSlides = slides.map((slide, index) => (
+        
         <div key={index}>
-            <div className='bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
+            <div className='flex justify-center bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
 
-                <div className='flex w-full justify-center py-[160px] h-[75vh]'>
+                <div className={`${styles.boxWidth}bg-back flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] min-h-[75vh]`}>
 
-                    <div className={`${styles.boxWidth} flex flex-col gap-[30px]`}>
+                    <div className={`flex flex-col gap-[30px] w-full`}>
                         <h1 className={`${styles.heading1} w-[600px]`}>
                             {slide.heading}
                         </h1>
@@ -52,13 +54,11 @@ const Hero = () => {
                 </div>
 
             </div>
-
         </div>
-
-    ));
+        ));
 
     return (
-        <section className={`${styles.flexCenter} `}>
+        <section className={``}>
             <Slider {...sliderSetting}>
                 {heroSlides}
             </Slider>

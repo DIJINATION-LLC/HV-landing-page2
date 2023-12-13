@@ -42,9 +42,14 @@
   background-size: cover;
 }
 
-.bg-hero-banner {
+/* .bg-hero-banner {
   background-image: url(../src/assets/HeroBanner.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.bg-back{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 66.15%);
+  
 }

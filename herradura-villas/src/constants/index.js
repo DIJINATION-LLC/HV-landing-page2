@@ -97,17 +97,5 @@ export const slides = [
         heading: "Elevate Your Portfolio with Prime Multifamily Space",
         paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
         buttonText:"Learn More",
-    },
-    {
-        backgroundImage: herobanner,
-        heading: "Heading 2",
-        paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
-        buttonText:"Learn More",
-    },
-    {
-        backgroundImage: herobanner,
-        heading: "Heading 3",
-        paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
-        buttonText:"Learn More",
-    },
+    }
 ];
