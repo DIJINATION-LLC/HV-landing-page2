@@ -1,4 +1,4 @@
-import { facebook, youtube, instagram, twitter } from '../assets'
+import { facebook, youtube, instagram, twitter,herobanner } from '../assets'
 
 
 export const navLinks = [
@@ -89,5 +89,25 @@ export const socialLinks = [
         alt: 'twitter',
         icon: twitter,
         link: 'www.twitter.com',
+    },
+];
+export const slides = [
+    {
+        backgroundImage: herobanner,
+        heading: "Elevate Your Portfolio with Prime Multifamily Space",
+        paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
+        buttonText:"Learn More",
+    },
+    {
+        backgroundImage: herobanner,
+        heading: "Heading 2",
+        paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
+        buttonText:"Learn More",
+    },
+    {
+        backgroundImage: herobanner,
+        heading: "Heading 3",
+        paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime location for investment.",
+        buttonText:"Learn More",
     },
 ];
