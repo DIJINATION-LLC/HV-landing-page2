@@ -3,11 +3,11 @@ import { navLinks } from '../constants';
 import { logo } from '../assets';
 import { Link } from 'react-router-dom';
 import styles from '../style';
-import Button from './Button'; 
+import Button from './Button';
 
 export const Navbar = () => {
-    const navLink = navLinks.slice(0, 3);
-    const button = navLinks.slice(4);
+    const navLink = navLinks.slice(0, 4);
+    const button = navLinks.slice(5);
 
     return (
         <nav className={`${styles.flexCenter} w-full justify-center py-[10px]`}>
@@ -24,8 +24,9 @@ export const Navbar = () => {
                             </Link>
                         </li>
                     ))}
+                    <li><Button to={button.path} text={button.title} /></li>
                 </ul>
-                <Button to={button.path} text={button.title}/>
+
             </div>
 
         </nav>);
