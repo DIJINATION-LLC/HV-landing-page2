@@ -1,4 +1,4 @@
-import { facebook, youtube, instagram, twitter,herobanner } from '../assets'
+import { facebook, youtube, instagram, twitter, herobanner } from '../assets'
 
 
 export const navLinks = [
