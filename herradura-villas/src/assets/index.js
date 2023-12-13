@@ -11,6 +11,7 @@ import logo from './Logo.svg';
 import upArrow from './upArrow.svg';
 import downArrow from './downArrow.svg';
 import logoFooter from './Logo-02.svg'
+import docsvault from './DocsVault.webp'
 
 export{
     facebook,
@@ -26,4 +27,5 @@ export{
     upArrow,
     downArrow,
     logoFooter,
+    docsvault,
 };

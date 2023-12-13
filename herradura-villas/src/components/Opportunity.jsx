@@ -1,9 +1,12 @@
 import React from 'react';
 import { opportunity } from '../assets';
+import Button from './Button';
 import styles from '../style';
 const Opportunity = () => (
-    <div className="flex w-full justify-center">
-        <div className={`${styles.boxWidth} flex-row gap-[25px]`}>
+    <div className="flex w-full justify-center py-[50px]">
+
+        <div className={`${styles.boxWidth} flex flex-row gap-[25px] items-center`}>
+            
             <div className='flex flex-col w-1/2 gap-[30px]'>
                 <h2 className={`${styles.heading2} text-yaleblue`}>
                     Unlock Success: <br></br> Seize this Prime CRE Opportunity Today
@@ -15,11 +18,15 @@ const Opportunity = () => (
                     projects, making it a prime location for investment. It is also conveniently located just a mile
                     from the nearest freeway on-ramp and a short drive to Downtown Phoenix.
                 </p>
+                <Button to={'/'} text={'Input Text Here'}/>
             </div>
+            
             <div className='flex w-1/2'>
-                <img src={opportunity} className='' alt='Opportunity' />
+                <img src={opportunity} className='aspect-square w-full' alt='' />
             </div>
+
         </div>
+
     </div>
 );
 

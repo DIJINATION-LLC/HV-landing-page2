@@ -7,6 +7,7 @@ import CTA from "./CTA";
 import FAQ from "./FAQ";
 import LeadGen from "./LeadGen";
 import Footer from "./Footer";
+import Button from "./Button";
 
 export{
     Bulletin,
@@ -17,5 +18,6 @@ export{
     CTA,
     FAQ,
     LeadGen,
-    Footer
+    Footer,
+    Button,
 }
