@@ -14,48 +14,35 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 9000,
+        autoplaySpeed: 2500,
         arrows: false,
-        appendDots: (dots) => (
-            <div>
-                <ul>{dots}</ul>
-            </div>
-        ),
-        customPaging: (i) => (
-            <div
-                style={{
-                    width: '12px',
-                    height: '12px',
-                    borderRadius: '50%',
-                    margin: '0 5px',
-                    background: i === currentSlide ? '#5cae17' : '#d9d9d9',
-                }}
-            />
-        ),
+
         beforeChange: (current, next) => setCurrentSlide(next),
     };
 
     const heroSlides = slides.map((slide, index) => (
-        
+
         <div key={index}>
-            <div className='flex justify-center bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
+            <div className='bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
 
-                <div className={`${styles.boxWidth}bg-back flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] max-h-[80vh]`}>
-
-                    <div className={`flex flex-col gap-[30px] w-full`}>
-                        <h1 className={`${styles.heading1} w-[600px]`}>
-                            {slide.heading}
-                        </h1>
-                        <p className={`${styles.paragraph} text-white w-[600px]`}>
-                            {slide.paragraph}
-                        </p>
-                        <Button to={'/'} text={slide.buttonText} />
+                <div className='bg-back w-full'>
+                    <div className='flex justify-center'>
+                        <div className={`${styles.boxWidth} flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] max-h-[80vh]`}>
+                            <div className={`flex flex-col gap-[30px] w-full`}>
+                                <h1 className={`${styles.heading1} w-[640px]`}>
+                                    {slide.heading}
+                                </h1>
+                                <p className={`${styles.paragraph} text-white w-[600px]`}>
+                                    {slide.paragraph}
+                                </p>
+                                <Button to={'/'} text={slide.buttonText} />
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        ));
+    ));
 
     return (
         <section className={``}>
