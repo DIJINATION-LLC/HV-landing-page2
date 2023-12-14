@@ -7,7 +7,7 @@ const Bulletin = () => (
 
     <div className={`${styles.boxWidth} flex justify-between p-[10px]`}>
 
-      <div className='flex items-center gap-[20px] '>
+      <div className='flex items-center xs:gap-[20px] gap-3'>
         {
           socialLinks.map((links) =>
           (<div key={links.id}>
@@ -21,7 +21,7 @@ const Bulletin = () => (
       </div>
 
       <div className='flex flex-row'>
-        <h5 className={`${styles.heading5} text-white`}>Call us: <a href='tel:' className="text-white hover:text-goldenbrown"> +1-xxx-xxxx</a></h5>
+        <h6 className={`${styles.heading6} text-white`}>Call us: <a href='tel:' className="text-white hover:text-goldenbrown"> +1-xxx-xxxx</a></h6>
       </div>
 
     </div>

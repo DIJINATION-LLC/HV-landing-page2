@@ -8,7 +8,7 @@ const Hero = () => {
     const [currentSlide, setCurrentSlide] = React.useState(0);
 
     const sliderSetting = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
@@ -25,14 +25,14 @@ const Hero = () => {
         <div key={index}>
             <div className='bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
 
-                <div className='bg-back w-full'>
+                <div className={`${window.innerWidth < 480 ? 'bg-back-responsive': 'bg-back'} w-full `}>
                     <div className='flex justify-center'>
-                        <div className={`${styles.boxWidth} flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] max-h-[80vh]`}>
-                            <div className={`flex flex-col gap-[30px] w-full`}>
-                                <h1 className={`${styles.heading1} w-[640px]`}>
+                        <div className={`${styles.boxWidth} flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] xs:max-h-[80vh] max-h-[95vh]`}>
+                            <div className={`flex flex-col gap-[30px] xs:w-[640px] w-full xs:px-0 px-2`}>
+                                <h1 className={`${styles.heading1}`}>
                                     {slide.heading}
                                 </h1>
-                                <p className={`${styles.paragraph} text-white w-[600px]`}>
+                                <p className={`${styles.paragraph} text-white`}>
                                     {slide.paragraph}
                                 </p>
                                 <Button to={'/'} text={slide.buttonText} />

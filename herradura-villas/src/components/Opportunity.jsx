@@ -5,9 +5,9 @@ import styles from '../style';
 const Opportunity = () => (
     <div className="flex w-full justify-center py-[50px]">
 
-        <div className={`${styles.boxWidth} flex flex-row gap-[25px] items-center`}>
+        <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[25px] items-center`}>
             
-            <div className='flex flex-col w-1/2 gap-[30px]'>
+            <div className='flex flex-col xs:w-1/2 w-full gap-[30px]'>
                 <h2 className={`${styles.heading2} text-yaleblue`}>
                     Unlock Success: <br></br> Seize this Prime CRE Opportunity Today
                 </h2>
@@ -21,7 +21,7 @@ const Opportunity = () => (
                 <Button to={'/'} text={'Input Text Here'}/>
             </div>
             
-            <div className='flex w-1/2'>
+            <div className='flex xs:w-1/2 w-full'>
                 <img src={opportunity} className='aspect-square w-full' alt='' />
             </div>
 

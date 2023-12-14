@@ -32,10 +32,10 @@ const FAQ = () => {
         setActiveIndex(index == activeIndex ? null : index);
     };
     return (
-        <div className={`${styles.flexCenter} w-full flex-row py-[50px]`}>
+        <div className={`${styles.flexCenter} w-full py-[50px]`}>
 
-            <div className={`${styles.boxWidth} flex flex-row gap-[20px]`}>
-                <div className='flex flex-col gap-[30px] w-1/2'>
+            <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[20px]`}>
+                <div className='flex flex-col gap-[30px] xs:w-1/2 w-full'>
                     <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
                     <div className="">
                         {faq.map((faq, index) => (
@@ -50,7 +50,7 @@ const FAQ = () => {
                     </div>
                 </div>
 
-                <div className='flex w-1/2'>
+                <div className='flex xs:w-1/2 w-full'>
                     <img src={faqImage} className='aspect-square w-full' alt='' />
                 </div>
             </div>

@@ -115,7 +115,7 @@ const LeadForm = () => {
                     type="text"
                     id="name"
                     placeholder="Full Name"
-                    className={`${styles.paragraph} w-full bg-white font-poppins px-[10px] py-[10px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full bg-white font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={name}
                     onChange={handleNameChange}
                     required
@@ -131,7 +131,7 @@ const LeadForm = () => {
                     type="text"
                     placeholder="Phone Number"
                     id="phone"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={phone}
                     onChange={handlePhoneChange}
                     onBlur={handlePhoneBlur}
@@ -146,7 +146,7 @@ const LeadForm = () => {
                     type="email"
                     id="email"
                     placeholder="Email Address"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={email}
                     onChange={handleEmailChange}
                     required
@@ -159,7 +159,7 @@ const LeadForm = () => {
             <div className="mb-4 relative">
                 <select
                     id="subject"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] pr-10 border-0 focus:outline-yaleblue focus:border-black appearance-none`}
+                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none`}
                     value={subject}
                     onChange={handleSubjectChange}
                     required
@@ -181,7 +181,7 @@ const LeadForm = () => {
                     id="message"
                     rows={5}
                     placeholder="Message"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={message}
                     onChange={handleMessageChange}
                     required
@@ -191,7 +191,7 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <button className='flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full bg-blue-gradient bg-light-golden-gradient font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none' type='submit'>Submit</button>
+            <button className='flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full rounded-[10px] bg-blue-gradient bg-light-golden-gradient font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none' type='submit'>Submit</button>
         </form>
     );
 };

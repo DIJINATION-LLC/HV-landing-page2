@@ -7,10 +7,10 @@ const Footer = () => {
     return (
         <footer className={`${styles.flexCenter} bg-yaleblue w-full py-[50px]`}>
 
-            <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px]`}>
+            <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px] xs:px-0 px-2`}>
 
-                <div className="flex flex-row gap-[20px]">
-                    <div className="flex flex-col w-1/3 gap-[20px]">
+                <div className="flex xs:flex-row flex-col gap-[20px]">
+                    <div className="flex flex-col xs:w-1/3 w-full gap-[20px]">
                         <img src={logoFooter} alt="herradura villas" className="h-[116px] w-[116]" />
 
                         <p className={`${styles.paragraph} text-white`}>
@@ -18,7 +18,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col w-1/3 gap-[47px]">
+                    <div className="flex flex-col xs:w-1/3 w-full xs:gap-[47px] gap-[25px]">
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Address:</p>
                             <p className={`${styles.paragraph} text-white`}>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-[74px]">
+                    <div className="flex flex-col xs:w-1/3 w-full xs:gap-[74px] gap-[25px]">
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Phone:</p>
                             <p className={`${styles.paragraph} text-white`}>+1 234 5678</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                                     socialLinks.map((links) =>
                                     (<div key={links.id} className=''>
                                         <a href={links.link}>
-                                            <img src={links.icon} alt={links.alt} className={`h-7 w-7 hover:fill-goldenbrown ${styles} transition-all transform hover:scale-105 ease-in-out` } />
+                                            <img src={links.icon} alt={links.alt} className={`h-7 w-7 hover:fill-goldenbrown ${styles} transition-all transform hover:scale-105 ease-in-out`} />
                                         </a>
                                     </div>
                                     )
@@ -52,7 +52,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div className='border-goldenbrown w-full border-t-[1px]'>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className="text-center">
                     <p className={`${styles.paragraph} text-white`}>
                         Copyright © All rights reserved | Powered by&nbsp;
-                        <a href='/' className='hover:text-goldenbrown'>DIJINATION</a>
+                        <a href='https://www.dijination.net/' className='hover:text-goldenbrown'>DIJINATION</a>
                     </p>
                 </div>
             </div>
