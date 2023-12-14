@@ -1,4 +1,4 @@
-import { facebook, youtube, instagram, twitter, slider1, slider2, slider3 } from '../assets';
+import { facebook, youtube, instagram, twitter, slider1, slider2, slider3,gallery1 } from '../assets';
 
 
 export const navLinks = [
@@ -32,11 +32,34 @@ export const navLinks = [
 ];
 export const gallery = [
     {
-        id: '',
-        alt: '',
-        cation: '',
-        image: '',
-    }
+        id: 'gallery-1',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },
+    {
+        id: 'gallery-2',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },
+    {
+        id: 'gallery-3',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },
+    {
+        id: 'gallery-4',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },{
+        id: 'gallery-5',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },
 ];
 export const faq = [
     {
@@ -70,7 +93,7 @@ export const socialLinks = [
         id: 'social-links-1',
         alt: 'facebook',
         icon: facebook,
-        link: 'www.facebook.com',
+        link: 'https://www.facebook.com/profile.php?id=61553825204115',
     },
     {
         id: 'social-links-2',
@@ -82,13 +105,13 @@ export const socialLinks = [
         id: 'social-links-3',
         alt: 'instagram',
         icon: instagram,
-        link: 'www.instagram.com',
+        link: 'https://www.instagram.com/herraduravillasofficial/',
     },
     {
         id: 'social-links-4',
         alt: 'twitter',
         icon: twitter,
-        link: 'www.twitter.com',
+        link: 'https://twitter.com/HerraduraVillas',
     },
 ];
 export const slides = [
