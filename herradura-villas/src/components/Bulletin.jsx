@@ -12,7 +12,7 @@ const Bulletin = () => (
           socialLinks.map((links) =>
           (<div key={links.id}>
             <a href={links.link}>
-              <img src={links.icon} alt={links.alt} className={`h-7 w-7  ${styles} transition-all transform hover:scale-105 ease-in-out`} />
+              <img src={links.icon} alt={links.alt} className={`h-5 w-5  ${styles} transition-all transform hover:scale-105 ease-in-out`} />
             </a>
           </div>
           )
@@ -21,7 +21,7 @@ const Bulletin = () => (
       </div>
 
       <div className='flex flex-row'>
-        <h4 className={`${styles.heading4} text-white`}>Call us: <a href='tel:' className="text-white hover:text-goldenbrown"> +1-xxx-xxxx</a></h4>
+        <h5 className={`${styles.heading5} text-white`}>Call us: <a href='tel:' className="text-white hover:text-goldenbrown"> +1-xxx-xxxx</a></h5>
       </div>
 
     </div>

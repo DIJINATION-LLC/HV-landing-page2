@@ -40,7 +40,7 @@ const Hero = () => {
         <div key={index}>
             <div className='flex justify-center bg-cover bg-center' style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
 
-                <div className={`${styles.boxWidth}bg-back flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] min-h-[75vh]`}>
+                <div className={`${styles.boxWidth}bg-back flex sm:flex-row items-center w-full justify-between z-10 relative py-[160px] max-h-[80vh]`}>
 
                     <div className={`flex flex-col gap-[30px] w-full`}>
                         <h1 className={`${styles.heading1} w-[600px]`}>
