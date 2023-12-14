@@ -16,7 +16,7 @@
   --white: #ffffff;
   --black: #3a3a3a;
   --gradient-box: linear-gradient(180deg, #F9FCFF 0%, #FFF 100%);
-
+  --black-shade:rgba(40, 40, 40, 0.35);
 
 
   /*font family*/
@@ -40,6 +40,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bg-lead-form {
+  background-image: url(../src/assets/LeadFormImage.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-black-shade{
+  background: var(--black-shade);
 }
 
 /* .bg-hero-banner {

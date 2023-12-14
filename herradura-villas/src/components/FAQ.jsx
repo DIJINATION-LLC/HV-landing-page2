@@ -2,22 +2,25 @@ import React, { useState } from 'react'
 import { faq } from '../constants'
 import styles from '../style'
 import { upArrow, downArrow } from '../assets';
-import { opportunity } from '../assets';
+import { faqImage } from '../assets';
 
 const FAQItem = ({ title, description, isOpen, toggleItem }) => {
     return (
         <div className={`${styles.flexCenter} w-full  py-[50px]`}>
-            <div className={`${styles.boxWidth} flex flex-col gap-[30px] w-1/2`}>
-                <div >
+
+            <div className={`${styles.boxWidth} flex flex-col gap-[30px] w-1/2 bg-gradient-box rounded-[10px]`}>
+                <div className='flex flex-row justify-between py-[25px] px-[35px]'>
                     <h5 className={`${styles.heading5} text-black`}>{title}</h5>
-                    <img className={`faq-icon ${isOpen ? 'open' : ''}`}
+                    <img className={`faq-icon ${isOpen ? 'open' : ''} bg-yaleblue rounded-full h-[40px] w-[40px]`}
                         src={isOpen ? downArrow : upArrow}
                         alt="Dropdown Icon" />
                 </div>
-                <div className={`faq-description ${isOpen ? 'open' : ''}`} style={{ maxHeight: isOpen ? '1000px' : '0' }}>
-                    <p className={`${styles.paragraph} p-2 text-black`}>{description}</p>
+
+                <div className={`faq-description ${isOpen ? 'open' : ''} `} style={{ maxHeight: isOpen ? '1000px' : '0' }}>
+                    <p className={`${styles.paragraph} p-2 text-black bg-gradient-box`}>{description}</p>
                 </div>
             </div>
+
         </div>
 
     );
@@ -31,9 +34,9 @@ const FAQ = () => {
     return (
         <div className={`${styles.flexCenter} w-full flex-row py-[50px]`}>
 
-            <div className={`${styles.boxWidth} flex flex-row`}>
+            <div className={`${styles.boxWidth} flex flex-row gap-[20px]`}>
                 <div className='flex flex-col gap-[30px] w-1/2'>
-                        <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
+                    <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
                     <div className="">
                         {faq.map((faq, index) => (
                             <FAQItem
@@ -46,9 +49,9 @@ const FAQ = () => {
                         ))}
                     </div>
                 </div>
-                
+
                 <div className='flex w-1/2'>
-                    <img src={opportunity} className='aspect-square w-full' alt='' />
+                    <img src={faqImage} className='aspect-square w-full' alt='' />
                 </div>
             </div>
         </div>

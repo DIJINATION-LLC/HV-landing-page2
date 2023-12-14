@@ -13,6 +13,8 @@ import downArrow from './downArrow.svg';
 import logoFooter from './Logo-02.svg';
 import docsvault from './DocsVault.webp';
 import herobanner from './HeroBanner.webp';
+import faqImage from './FAQ.webp'
+import leadFormImage from './LeadFormImage.webp';
 
 export{
     facebook,
@@ -30,4 +32,7 @@ export{
     logoFooter,
     docsvault,
     herobanner,
+    faqImage,
+    leadFormImage,
+
 };
