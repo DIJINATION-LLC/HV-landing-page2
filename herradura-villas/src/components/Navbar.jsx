@@ -6,7 +6,7 @@ import styles from '../style';
 import Button from './Button';
 
 export const Navbar = () => {
-    const innerLinks = navLinks.slice(0, 4); 
+    const innerLinks = navLinks.slice(0, 4);
 
     return (
         <nav className={`${styles.flexCenter} w-full justify-center py-[10px]`}>
@@ -16,24 +16,23 @@ export const Navbar = () => {
                     <img src={logo} alt="Herradura Vills" className="h-[92px] w-[200px]" />
                 </a>
                 <ul className="flex flex-row items-center">
-  {innerLinks.map((nav, index) => (
-    <li key={nav.id}>
-      <Link
-        to={nav.path}
-        className={`text-black hover:text-yaleblue transition-colors duration-300 ${
-          nav.id === 'contact' ? 'mr-0' : 'mr-4 md:mr-8'
-        }`}
-      >
-        {nav.title}
-      </Link>
-    </li>
-  ))}
-  {navLinks.length >= 4 && ( 
-    <li>
-      <Button to={navLinks[4].path} text={navLinks[4].title} />
-    </li>
-  )}
-</ul>
+                    {innerLinks.map((nav, index) => (
+                        <li key={nav.id}>
+                            <Link
+                                to={nav.path}
+                                className={`text-black hover:text-yaleblue transition-colors duration-300 ${nav.id === 'contact' ? 'mr-0' : 'mr-4 md:mr-8'
+                                    }`}
+                            >
+                                {nav.title}
+                            </Link>
+                        </li>
+                    ))}
+                    {navLinks.length >= 4 && (
+                        <li>
+                            <Button to={navLinks[4].path} text={navLinks[4].title} />
+                        </li>
+                    )}
+                </ul>
 
 
             </div>
