@@ -27,7 +27,7 @@ const Button = ({ styles, text, onClick, to, tel, type }) => {
     return (
         <button
             type={type}
-            className={`flex flex-row gap-3 justify-center items-center text-center w-fit xs:py-[10px] xs:px-[35px] shadow-sm py-[10px] px-[28px] bg-blue-gradient hover:bg-light-golden-gradient font-semibold xs:text-[18px] text-[14px] text-white rounded-[10px] outline-none ${styles} transition-all transform hover:scale-105 ease-in-out`}
+            className={`flex flex-row gap-3 justify-center items-center text-center w-fit xs:py-[10px] xs:px-[35px] shadow-sm py-[10px] px-[28px] bg-blue-gradient bg-light-golden-gradient font-semibold xs:text-[18px] text-[14px] text-white rounded-[10px] outline-none ${styles} transition-all transform hover:scale-105 ease-in-out`}
             onClick={handleButtonClick}
         >
             {renderContent()}

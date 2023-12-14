@@ -99,7 +99,7 @@ export const socialLinks = [
         id: 'social-links-2',
         alt: 'youtube',
         icon: youtube,
-        link: 'www.youtube.com',
+        link: 'https://www.youtube.com/channel/UCcwSfPcBO3ilad39z918bLw',
     },
     {
         id: 'social-links-3',

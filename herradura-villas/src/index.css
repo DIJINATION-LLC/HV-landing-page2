@@ -27,7 +27,7 @@
   background: var(--blue-gradient);
 }
 
-.bg-light-golden-gradient {
+.bg-light-golden-gradient:hover {
   background: var(--light-golden-gradient);
 }
 

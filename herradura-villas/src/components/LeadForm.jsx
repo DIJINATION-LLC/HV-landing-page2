@@ -191,7 +191,7 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <button className='flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full bg-yaleblue hover:bg-light-golden-brown font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none' type='submit'>Submit</button>
+            <button className='flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full bg-blue-gradient bg-light-golden-gradient font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none' type='submit'>Submit</button>
         </form>
     );
 };
