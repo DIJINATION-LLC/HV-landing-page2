@@ -19,7 +19,7 @@ export const Navbar = () => {
                     {innerLinks.map((nav, index) => (
                         <li key={nav.id}>
                             <Link
-                                to={nav.path}
+                                to={nav.url}
                                 className={`text-black hover:text-yaleblue transition-colors duration-300 ${nav.id === 'contact' ? 'mr-0' : 'mr-4 md:mr-8'
                                     }`}
                             >
@@ -29,7 +29,7 @@ export const Navbar = () => {
                     ))}
                     {navLinks.length >= 4 && (
                         <li>
-                            <Button to={navLinks[4].path} text={navLinks[4].title} />
+                            <Button to={navLinks[4].url} text={navLinks[4].title} />
                         </li>
                     )}
                 </ul>

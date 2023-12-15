@@ -5,27 +5,27 @@ export const navLinks = [
     {
         id: 'home',
         title: 'Home',
-        path: '/',
+        url: '/',
     },
     {
         id: 'opportunity',
         title: 'Opportunity',
-        path: '/',
+        url: '/',
     },
     {
         id: 'docSecure',
         title: 'DocSecure',
-        path: '/',
+        url: '#docsecure',
     },
     {
         id: 'gallery',
         title: 'Gallery',
-        path: '/',
+        url: '#gallery',
     },
     {
         id: 'talkToUs',
         title: 'Talk To Us',
-        path: '/',
+        url: '#',
     },
 
 
