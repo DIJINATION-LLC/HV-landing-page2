@@ -15,14 +15,14 @@ export const App = () => (
     <div className=''>
       <Hero />
     </div>
-    <div className='xs:px-0 px-2'>
+    <div className='xs:px-0 px-2 sm:px-2'>
       <Opportunity />
       <Gallery />
     </div>
     <div className=''>
       <CTA />
     </div>
-    <div className='xs:px-0 px-2'>
+    <div className='xs:px-0 px-2 sm:px-2'>
       <FAQ />
     </div>
     <div className=''>

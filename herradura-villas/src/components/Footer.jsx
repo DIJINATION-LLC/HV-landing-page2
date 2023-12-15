@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className={`${styles.flexCenter} bg-yaleblue w-full py-[50px]`}>
 
-            <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px] xs:px-0 px-2`}>
+            <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px] xs:px-0 px-2 sm:px-2`}>
 
                 <div className="flex xs:flex-row flex-col gap-[20px]">
                     <div className="flex flex-col xs:w-1/3 w-full gap-[20px]">

@@ -180,17 +180,26 @@ const LeadForm = () => {
                 />
                 <select
                     id="subject"
-                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none overflow-y-auto`}
                     value={subject}
                     onChange={handleSubjectChange}
                     required
                 >
                     <option value="">Select Your Role</option>
-                    <option value="General Question">List Broker/Agent</option>
-                    <option value="Recycling">Buyer Broker/Agent</option>
-                    <option value="Sales">Selling/Buying Broker/Agent</option>
-                    <option value="Legal and Compliance">Transaction coordinator</option>
-                    <option value="Legal and Compliance">Landlord Broker/Agent</option>
+                    <option value="General Question">Broker/Agent</option>
+                    <option value="Recycling">Listing Broker/Agent</option>
+                    <option value="Sales">Buyer Broker/Agent</option>
+                    <option value="Legal and Compliance">Selling/Buying Broker/Agent</option>
+                    <option value="Legal and Compliance">Transaction Coordinator</option>
+                    <option value="General Question">Landlord Broker/Agent</option>
+                    <option value="General Question">Principal</option>
+                    <option value="General Question">Lender</option>
+                    <option value="General Question">Assessor</option>
+                    <option value="General Question">Appraiser</option>
+                    <option value="General Question">Third Party Service</option>
+                    <option value="General Question">Tenant</option>
+                    <option value="General Question">Owner/Property Manager</option>
+                    <option value="General Question">Other</option>
                 </select>
                 {errors.subject && (
                     <p className={`font-poppins text-red-500 font-normal text-[14px]`}>{errors.subject}</p>
@@ -201,7 +210,7 @@ const LeadForm = () => {
                 <img
                     src={messageicon}
                     alt="Drop-Icon"
-                    className="absolute left-3 top-1/2 transform xs:-translate-y-[70px] transform-translate-y-[120px]  h-5 w-5"
+                    className="absolute left-3 xs:top-7 top-6 transform -translate-y-1/2  h-5 w-5"
                 />
                 <textarea
                     id="message"
