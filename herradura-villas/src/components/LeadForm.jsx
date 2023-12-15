@@ -185,7 +185,7 @@ const LeadForm = () => {
                     onChange={handleSubjectChange}
                     required
                 >
-                    <option value="">Select Your Role</option>
+                    <option value="" >Select Your Role</option>
                     <option value="General Question">Broker/Agent</option>
                     <option value="Recycling">Listing Broker/Agent</option>
                     <option value="Sales">Buyer Broker/Agent</option>
@@ -199,7 +199,7 @@ const LeadForm = () => {
                     <option value="General Question">Third Party Service</option>
                     <option value="General Question">Tenant</option>
                     <option value="General Question">Owner/Property Manager</option>
-                    <option value="General Question">Other</option>
+                    <option value="General Question" className={`${styles.paragraph}`}>Other</option>
                 </select>
                 {errors.subject && (
                     <p className={`font-poppins text-red-500 font-normal text-[14px]`}>{errors.subject}</p>

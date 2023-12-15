@@ -14,7 +14,7 @@ export const CTA = () => (
             <p className={`${styles.paragrah} text-white`}>
                 Our Secure Data-vault contains all legal and financial information necessary for you to make an informed decision.
             </p>
-            <Button to={'/'} text={'Make an Offer'} />
+            <Button to={'/'} text={'Log In Here'} />
 
         </div>
 

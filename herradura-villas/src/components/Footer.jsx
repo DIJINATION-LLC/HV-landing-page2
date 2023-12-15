@@ -21,19 +21,19 @@ const Footer = () => {
                     <div className="flex flex-col xs:w-1/3 w-full xs:gap-[47px] gap-[25px]">
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Address:</p>
-                            <p className={`${styles.paragraph} text-white`}>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href='' className={`${styles.paragraph} text-white  hover:text-goldenbrown`}>2390 E Camelback Rd, Suite 130, Phoenix, AZ 85016</a>
                         </div>
 
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Email:</p>
-                            <p className={`${styles.paragraph} text-white`}>Gorem ipsum dolor sit amet</p>
+                            <a href='' className={`${styles.paragraph} text-white hover:text-goldenbrown`}>FSBi@me-pm.com</a>
                         </div>
                     </div>
 
                     <div className="flex flex-col xs:w-1/3 w-full xs:gap-[74px] gap-[25px]">
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Phone:</p>
-                            <p className={`${styles.paragraph} text-white`}>+1 234 5678</p>
+                            <a href='' className={`${styles.paragraph} text-white hover:text-goldenbrown`}>+1 234 5678</a>
                         </div>
 
                         <div className="flex flex-col gap-[20px]">
