@@ -3,7 +3,7 @@ import styles from '../style'
 import Button from './Button'
 
 export const CTA = () => (
-    <div id='docsecure' className={`${styles.flexCenter} bg-docs-vault flex w-full justify-center py-20`}>
+    <section id='docsecure' className={`${styles.flexCenter} bg-docs-vault flex w-full justify-center py-20`}>
 
         <div className={`${styles.boxWidth}  flex flex-col gap-[20px] items-center text-center xs:w-[640px] w-full xs:px-0 px-2`}>
 
@@ -14,10 +14,10 @@ export const CTA = () => (
             <p className={`${styles.paragrah} text-white`}>
                 Our Secure Data-vault contains all legal and financial information necessary for you to make an informed decision.
             </p>
-            <Button to={'/'} text={'Log In Here'} />
+            <Button to={'/'} text={'Login Here'} />
 
         </div>
 
-    </div>
+    </section>
 )
 export default CTA

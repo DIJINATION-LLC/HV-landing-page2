@@ -7,17 +7,18 @@ import { faqImage } from '../assets';
 const FAQItem = ({ title, description, isOpen, toggleItem }) => {
   return (
     <div className={`${styles.flexCenter} w-full py-2`}>
-      <div className={`${styles.boxWidth} flex flex-col gap-[12px] w-1/2 bg-gradient-box rounded-[10px]`}>
-        <div className='flex flex-row justify-between py-[25px] px-[35px]' onClick={toggleItem}>
+      <div className={`${styles.boxWidth} ${isOpen ? 'gap-3' : ''} flex flex-col w-1/2 bg-gradient-box rounded-[10px] shadow py-[25px] px-[35px]`}>
+        <div className='flex flex-row justify-between items-center' onClick={toggleItem}>
           <h5 className={`${styles.heading5} text-black`}>{title}</h5>
           <img
-            className={`faq-icon ${isOpen ? 'open' : ''} bg-yaleblue rounded-full h-[40px] w-[40px]`}
+            className={`faq-icon ${isOpen ? 'open' : ''} bg-yaleblue rounded-full h-[40px] w-[40px] cursor-pointer`}
             src={isOpen ? upArrow : downArrow}
             alt="Dropdown Icon"
           />
         </div>
-        <div className={`faq-description ${isOpen ? 'open' : ''}`} style={{ maxHeight: isOpen ? '1000px' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out' }}>
-          <p className={`${styles.paragraph} p-2 text-black bg-gradient-box`}>{description}</p>
+        <div className={`${isOpen ? '' : 'invisible'} border-black border-t-[1px]`}></div>
+        <div className={`faq-description ${isOpen ? '' : 'invisible'}`} style={{ maxHeight: isOpen ? '1000px' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out' }}>
+          <p className={`${styles.paragraph} text-black bg-gradient-box`}>{description}</p>
         </div>
       </div>
     </div>
@@ -33,9 +34,10 @@ const FAQ = () => {
 
   return (
     <section className={`${styles.flexCenter} w-full py-[50px]`}>
+
       <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[20px]`}>
         <div className='flex flex-col gap-[30px] xs:w-1/2 w-full'>
-          <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
+          <h2 className={`${styles.heading2} text-yaleblue`}>Frequently Asked Questions</h2>
           <div className="">
             {faq.map((faqItem, index) => (
               <FAQItem
@@ -52,6 +54,7 @@ const FAQ = () => {
           <img src={faqImage} className='aspect-square max-h-[684px] w-full' alt='' />
         </div>
       </div>
+
     </section>
   );
 };

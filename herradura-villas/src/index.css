@@ -7,6 +7,10 @@
 @tailwindcss/gradient;
 
 
+* {
+  scroll-behavior: smooth;
+}
+
 :root {
   /*Colors*/
   --yale-blue: #0B5394;
@@ -16,7 +20,7 @@
   --white: #ffffff;
   --black: #3a3a3a;
   --gradient-box: linear-gradient(180deg, #F9FCFF 0%, #FFF 100%);
-  --black-shade:rgba(40, 40, 40, 0.35);
+  --black-shade: rgba(40, 40, 40, 0.35);
 
 
   /*font family*/
@@ -41,6 +45,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bg-lead-form {
   background-image: url(../src/assets/LeadFormImage.webp);
   background-position: center;
@@ -48,15 +53,16 @@
   background-size: cover;
 }
 
-.bg-black-shade{
+.bg-black-shade {
   background: var(--black-shade);
 }
 
-.bg-back{
+.bg-back {
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 100%);
-  
+
 }
-.bg-back-responsive{
+
+.bg-back-responsive {
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  
+
 }

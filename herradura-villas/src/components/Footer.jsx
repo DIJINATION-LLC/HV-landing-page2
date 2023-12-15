@@ -14,7 +14,7 @@ const Footer = () => (
                         <img src={logoFooter} alt="herradura villas" className="h-[116px] w-[116]" />
 
                         <p className={`${styles.paragraph} text-white`}>
-                            Your search for an ideal commercial real estate investment in the heart of bustling downtown Phoenix stops here.
+                        Your search for an ideal commercial real estate investment in the heart of bustling downtown Phoenix stops here
                         </p>
                     </div>
 
@@ -26,7 +26,7 @@ const Footer = () => (
 
                         <div className="flex flex-col gap-[20px]">
                             <p className={`${styles.heading5} text-goldenbrown`}>Email:</p>
-                            <a href='' className={`${styles.paragraph} text-white hover:text-goldenbrown`}>FSBi@me-pm.com</a>
+                            <a href='' className={`${styles.paragraph} text-white hover:text-goldenbrown`}>fsbi@me-pm.com</a>
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@ const Footer = () => (
                                 {
                                     socialLinks.map((links) =>
                                     (<div key={links.id} className=''>
-                                        <a href={links.link}>
+                                        <a href={links.link} target='blank'>
                                             <img src={links.icon} alt={links.alt} className={`h-7 w-7 hover:fill-goldenbrown ${styles} transition-all transform hover:scale-105 ease-in-out`} />
                                         </a>
                                     </div>
@@ -65,7 +65,7 @@ const Footer = () => (
                         <a href='https://www.dijination.net/' className='hover:text-goldenbrown'>DIJINATION</a>
                     </p>
                 </div>
-                
+
             </div>
 
         </footer>
