@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../style';
+import { user, phoneicon, emailicon, dropicon, messageicon } from '../assets';
 
 
 const LeadForm = () => {
@@ -110,12 +111,17 @@ const LeadForm = () => {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-[15px] w-full mx-auto">
 
-            <div className="mb-4">
+            <div className="mb-4 relative">
+                <img
+                    src={user}
+                    alt="User-Icon"
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5"
+                />
                 <input
                     type="text"
                     id="name"
                     placeholder="Full Name"
-                    className={`${styles.paragraph} w-full bg-white font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full bg-white font-poppins xs:px-[50px] px-[40px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={name}
                     onChange={handleNameChange}
                     required
@@ -126,12 +132,17 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 relative">
+                <img
+                    src={phoneicon}
+                    alt="Phone-Icon"
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5"
+                />
                 <input
                     type="text"
                     placeholder="Phone Number"
                     id="phone"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px]  py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={phone}
                     onChange={handlePhoneChange}
                     onBlur={handlePhoneBlur}
@@ -141,12 +152,17 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 relative">
+                <img
+                    src={emailicon}
+                    alt="Email-Icon"
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5"
+                />
                 <input
                     type="email"
                     id="email"
                     placeholder="Email Address"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={email}
                     onChange={handleEmailChange}
                     required
@@ -157,9 +173,14 @@ const LeadForm = () => {
             </div>
 
             <div className="mb-4 relative">
+                <img
+                    src={dropicon}
+                    alt="Drop-Icon"
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5"
+                />
                 <select
                     id="subject"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none`}
                     value={subject}
                     onChange={handleSubjectChange}
                     required
@@ -176,12 +197,17 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 relative justify-center">
+                <img
+                    src={messageicon}
+                    alt="Drop-Icon"
+                    className="absolute left-3 top-1/2 transform xs:-translate-y-[70px] transform-translate-y-[120px]  h-5 w-5"
+                />
                 <textarea
                     id="message"
                     rows={5}
                     placeholder="Message"
-                    className={`${styles.paragraph} w-full font-poppins px-[10px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] rounded-[5px] border-0 focus:outline-yaleblue focus:border-black`}
                     value={message}
                     onChange={handleMessageChange}
                     required

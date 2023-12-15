@@ -3,9 +3,9 @@ import twitter from './Twitter.svg';
 import youtube from './Youtube.svg';
 import instagram from './Instagram.svg';
 import user from './User.svg';
-import email from './Email.svg';
-import message from './Message.svg';
-import phone from './Phone.svg';
+import emailicon from './Email.svg';
+import messageicon from './Message.svg';
+import phoneicon from './Phone.svg';
 import opportunity from './Opportunity.webp';
 import logo from './Logo.svg';
 import upArrow from './upArrow.svg';
@@ -18,6 +18,7 @@ import slider1 from './slider1.webp';
 import slider2 from './slider2.webp';
 import slider3 from './slider3.webp';
 import gallery1 from './gallery1.webp';
+import dropicon from './dropIcon.svg';
 
 
 export {
@@ -26,9 +27,9 @@ export {
     instagram,
     twitter,
     user,
-    email,
-    message,
-    phone,
+    emailicon,
+    messageicon,
+    phoneicon,
     opportunity,
     logo,
     upArrow,
@@ -41,5 +42,6 @@ export {
     slider2,
     slider3,
     gallery1,
+    dropicon,
 
 };
