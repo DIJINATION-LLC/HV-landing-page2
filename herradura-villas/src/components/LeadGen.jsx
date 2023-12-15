@@ -1,8 +1,9 @@
-import React from 'react'
-import LeadForm from './LeadForm'
-import styles from '../style'
+import React from 'react';
+import LeadForm from './LeadForm';
+import styles from '../style';
+
 export const LeadGen = () => (
-    <div className="bg-lead-form flex w-full justify-center py-20">
+    <section id='leadgen' className="bg-lead-form flex w-full justify-center py-20">
 
         <div className={`${styles.flexCenter} flex xs:w-[635px] w-full bg-black-shade py-[25px] rounded-[20px]`}>
 
@@ -24,8 +25,8 @@ export const LeadGen = () => (
 
             </div>
 
-
         </div>
-    </div>
-)
+        
+    </section>
+);
 export default LeadGen

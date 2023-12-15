@@ -3,20 +3,21 @@ import styles from '../style'
 import { gallery } from '../constants'
 
 export const Gallery = () => (
-    <div className={`${styles.flexCenter} w-full py-[50px]`}>
+    <section id='gallery' className={`${styles.flexCenter} w-full py-[50px]`}>
+
         <div className={`${styles.boxWidth} flex flex-col gap-[30px] items-center`}>
             <h2 className={`${styles.heading2} text-yaleblue`}>Gallery</h2>
             <div className='flex flex-row gap-[20px]'>
                 {
-                    gallery.map((gal) =>
+                    gallery.map((item) =>
                     (
-                        <img src={gal.image} alt='' className='' />
+                        <img src={item.image} alt='' className='' />
                     ))
                 }
 
             </div>
         </div>
 
-    </div>
+    </section>
 )
 export default Gallery

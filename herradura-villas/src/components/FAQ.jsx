@@ -32,7 +32,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className={`${styles.flexCenter} w-full py-[50px]`}>
+    <section className={`${styles.flexCenter} w-full py-[50px]`}>
       <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[20px]`}>
         <div className='flex flex-col gap-[30px] xs:w-1/2 w-full'>
           <h2 className={`${styles.heading2}`}>Frequently Asked Questions</h2>
@@ -52,7 +52,7 @@ const FAQ = () => {
           <img src={faqImage} className='aspect-square max-h-[684px] w-full' alt='' />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
