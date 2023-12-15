@@ -48,7 +48,18 @@ export const gallery = [
         alt: 'herradura villas',
         cation: 'herradura villas',
         image: gallery1,
-    }
+    },
+    {
+        id: 'gallery-4',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },{
+        id: 'gallery-5',
+        alt: 'herradura villas',
+        cation: 'herradura villas',
+        image: gallery1,
+    },
 ];
 export const faq = [
     {
