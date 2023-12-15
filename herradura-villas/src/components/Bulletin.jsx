@@ -3,7 +3,7 @@ import { socialLinks } from '../constants';
 import styles from '../style';
 
 const Bulletin = () => (
-  <div className="flex w-full bg-yaleblue justify-center">
+  <section className="flex w-full bg-yaleblue justify-center">
 
     <div className={`${styles.boxWidth} flex justify-between p-[10px]`}>
       <div className='flex items-center xs:gap-[20px] gap-3'>
@@ -21,7 +21,7 @@ const Bulletin = () => (
       </div>
     </div>
     
-  </div>
+  </section>
 );
 
 export default Bulletin;

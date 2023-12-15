@@ -3,8 +3,8 @@ import { logoFooter } from '../assets';
 import { socialLinks } from '../constants'
 import styles from '../style';
 
-const Footer = () => {
-    return (
+const Footer = () => (
+   
         <footer className={`${styles.flexCenter} bg-yaleblue w-full py-[50px]`}>
 
             <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px] xs:px-0 px-2 sm:px-2`}>
@@ -65,9 +65,10 @@ const Footer = () => {
                         <a href='https://www.dijination.net/' className='hover:text-goldenbrown'>DIJINATION</a>
                     </p>
                 </div>
+                
             </div>
+
         </footer>
     );
-};
 
 export default Footer;

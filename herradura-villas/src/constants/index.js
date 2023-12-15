@@ -5,12 +5,12 @@ export const navLinks = [
     {
         id: 'home',
         title: 'Home',
-        url: '/',
+        url: '#',
     },
     {
         id: 'opportunity',
         title: 'Opportunity',
-        url: '/',
+        url: '#opportunity',
     },
     {
         id: 'docSecure',

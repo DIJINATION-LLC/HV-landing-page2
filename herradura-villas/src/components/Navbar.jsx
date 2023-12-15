@@ -1,7 +1,6 @@
 import React from 'react';
 import { navLinks } from '../constants';
 import { logo } from '../assets';
-import { Link } from 'react-router-dom';
 import styles from '../style';
 import Button from './Button';
 
@@ -12,19 +11,15 @@ export const Navbar = () => {
         <nav className={`${styles.flexCenter} w-full justify-center py-[10px]`}>
 
             <div className={`${styles.boxWidth} flex flex-row items-center justify-between`}>
-                <a href="/">
+                <a href="#">
                     <img src={logo} alt="Herradura Vills" className="h-[92px] w-[200px]" />
                 </a>
+
                 <ul className="flex flex-row items-center">
                     {innerLinks.map((nav, index) => (
                         <li key={nav.id}>
-                            <Link
-                                to={nav.url}
-                                className={`text-black hover:text-yaleblue transition-colors duration-300 ${nav.id === 'contact' ? 'mr-0' : 'mr-4 md:mr-8'
-                                    }`}
-                            >
-                                {nav.title}
-                            </Link>
+                            <a href={nav.url} className={`text-black hover:text-yaleblue transition-colors duration-300 ${nav.id === 'contact' ? 'mr-0' : 'mr-4 md:mr-8'
+                                }`}>{nav.title}</a>
                         </li>
                     ))}
                     {navLinks.length >= 4 && (
@@ -34,10 +29,10 @@ export const Navbar = () => {
                     )}
                 </ul>
 
-
             </div>
 
-        </nav>);
+        </nav>
+        );
 };
 
 export default Navbar;
