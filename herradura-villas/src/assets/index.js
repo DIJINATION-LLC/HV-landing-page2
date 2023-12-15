@@ -19,6 +19,7 @@ import slider2 from './slider2.webp';
 import slider3 from './slider3.webp';
 import gallery1 from './gallery1.webp';
 import dropicon from './dropIcon.svg';
+import favIcon from './fav-icon.svg';
 
 
 export {
@@ -43,5 +44,6 @@ export {
     slider3,
     gallery1,
     dropicon,
+    favIcon,
 
 };
