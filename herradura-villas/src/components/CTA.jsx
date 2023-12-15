@@ -12,7 +12,7 @@ export const CTA = () => (
             </h2>
 
             <p className={`${styles.paragrah} text-white`}>
-            Our Secure Data-vault contains all legal and financial information necessary for you to make an informed decision.
+                Our Secure Data-vault contains all legal and financial information necessary for you to make an informed decision.
             </p>
             <Button to={'/'} text={'Make an Offer'} />
 
