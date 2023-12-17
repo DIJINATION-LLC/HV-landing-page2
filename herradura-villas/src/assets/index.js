@@ -20,6 +20,8 @@ import slider3 from './slider3.webp';
 import gallery1 from './gallery1.webp';
 import dropicon from './dropIcon.svg';
 import favIcon from './fav-icon.svg';
+import close from './close.svg';
+import menu from './menu.svg';
 
 
 export {
@@ -45,5 +47,6 @@ export {
     gallery1,
     dropicon,
     favIcon,
-
+    close,
+    menu
 };

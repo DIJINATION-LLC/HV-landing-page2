@@ -66,3 +66,54 @@
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 
 }
+
+.slider-image {
+  width: 100%; /* Ensure the images fill the slider */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  /* Add any other necessary styles */
+}
+
+.slick-prev {
+  left: -40px; /* Adjust as needed */
+}
+
+/* Positioning the right arrow */
+.slick-next {
+  right: -30px; /* Adjust as needed */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0; /* Hide default arrows */
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7); /* Arrow background color */
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 0;
+  height: auto;
+}
+
+
+/* Styling for the arrow icons (font-awesome or custom icons) */
+.slick-prev::before{
+  content: '\276E'; /* Unicode arrow character */
+  font-size: 32px;
+  color: #0B5394; /* Arrow color */
+}
+.slick-next::before {
+  content: '\276F'; /* Unicode arrow character */
+  font-size: 32px;
+  color: #0B5394; /* Arrow color */
+}
+/* Hover effect for arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Arrow background color on hover */
+}

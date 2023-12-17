@@ -9,7 +9,7 @@ const Opportunity = () => (
 
             <div className='flex flex-col xs:w-1/2 w-full gap-[30px]'>
                 <h2 className={`${styles.heading2} text-yaleblue`}>
-                    Unlock Success: <br></br> Seize this Prime CRE Opportunity Today
+                    Unlock Success:<br></br>Seize this Prime Investment Opportunity Today	
                 </h2>
                 <p className={`${styles.paragraph}`}>
                     Herradura Villas is located in the heart of Midtown Phoenix making it an attractive option
