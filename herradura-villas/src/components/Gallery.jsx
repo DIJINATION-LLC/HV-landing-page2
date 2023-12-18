@@ -21,16 +21,16 @@ export const Gallery = () => {
         pauseOnHover: true,
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-              },
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                },
             },
             {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-              },
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
             },
         ],
     };
@@ -40,6 +40,11 @@ export const Gallery = () => {
         setLightboxOpen(true);
     };
 
+    const closeLightbox = () => {
+        setLightboxOpen(false);
+        setSelectedImage('');
+    };
+
     return (
         <section id='gallery' className={`${styles.flexCenter} w-full py-[50px]`}>
             <div className={`${styles.boxWidth} flex flex-col gap-[30px] items-center`}>
@@ -47,19 +52,24 @@ export const Gallery = () => {
                 <div className="w-full">
                     <Slider {...settings}>
                         {gallery.map((item) => (
-                            <div key={item.id} className='p-2' onClick={() => openLightbox(item.image)}>
-                                <img src={item.image} alt={item.alt} className='slider-image' />
+                            <div key={item.id} className='p-2'>
+                                <img
+                                    src={item.image}
+                                    alt={item.alt}
+                                    className='slider-image'
+                                    onClick={() => openLightbox(item.image)}
+                                />
+                                {lightboxOpen && (
+                                    <ModalImage
+                                        small={selectedImage}
+                                        large={selectedImage}
+                                        alt="Gallery Image"
+                                        onClose={closeLightbox}
+                                    />
+                                )}
                             </div>
                         ))}
                     </Slider>
-                    {lightboxOpen && (
-                        <ModalImage
-                            small={selectedImage}
-                            large={selectedImage}
-                            alt="Gallery Image"
-                            onClose={() => setLightboxOpen(false)}
-                        />
-                    )}
                 </div>
             </div>
         </section>
