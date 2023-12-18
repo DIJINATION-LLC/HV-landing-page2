@@ -181,26 +181,26 @@ const LeadForm = () => {
                 />
                 <select
                     id="role"
-                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none overflow-y-auto`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black overflow-y-auto`}
                     value={role}
                     onChange={handleroleChange}
                     required
                 >
                     <option value="" >Select Your Role</option>
-                    <option value="General Question">Broker/Agent</option>
-                    <option value="Recycling">Listing Broker/Agent</option>
-                    <option value="Sales">Buyer Broker/Agent</option>
-                    <option value="Legal and Compliance">Selling/Buying Broker/Agent</option>
-                    <option value="Legal and Compliance">Transaction Coordinator</option>
-                    <option value="General Question">Landlord Broker/Agent</option>
-                    <option value="General Question">Principal</option>
-                    <option value="General Question">Lender</option>
-                    <option value="General Question">Assessor</option>
-                    <option value="General Question">Appraiser</option>
-                    <option value="General Question">Third Party Service</option>
-                    <option value="General Question">Tenant</option>
-                    <option value="General Question">Owner/Property Manager</option>
-                    <option value="General Question" className={`${styles.paragraph}`}>Other</option>
+                    <option value="1">Broker/Agent</option>
+                    <option value="2">Listing Broker/Agent</option>
+                    <option value="3">Buyer Broker/Agent</option>
+                    <option value="4">Selling/Buying Broker/Agent</option>
+                    <option value="5">Transaction Coordinator</option>
+                    <option value="5">Landlord Broker/Agent</option>
+                    <option value="6">Principal</option>
+                    <option value="7">Lender</option>
+                    <option value="8">Assessor</option>
+                    <option value="9">Appraiser</option>
+                    <option value="10">Third Party Service</option>
+                    <option value="11">Tenant</option>
+                    <option value="12">Owner/Property Manager</option>
+                    <option value="13" className={`${styles.paragraph}`}>Other</option>
                 </select>
                 {errors.role && (
                     <p className={`font-poppins text-red-500 font-normal text-[14px]`}>{errors.role}</p>

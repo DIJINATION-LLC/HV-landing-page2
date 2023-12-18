@@ -9,8 +9,8 @@ const Footer = () => (
 
         <div className={`${styles.boxWidth} w-full flex flex-col gap-[50px] xs:px-0 px-2 sm:px-2`}>
 
-            <div className="flex xs:flex-row flex-col gap-[20px]">
-                <div className="flex flex-col xs:w-1/3 w-full gap-[20px]">
+            <div className="flex xs:flex-row flex-col gap-5">
+                <div className="flex flex-col xs:w-1/3 w-full gap-5">
                     <img src={logoFooter} alt="herradura villas" className="h-[116px] w-[116]" />
 
                     <p className={`${styles.paragraph} text-white`}>
@@ -18,20 +18,20 @@ const Footer = () => (
                     </p>
                 </div>
 
-                <div className="flex flex-col xs:w-1/3 w-full justify-between xs:h-[35vh]">
-                    <div className="flex flex-col gap-[20px]">
+                <div className="flex flex-col xs:w-1/3 w-full justify-between xs:h-[35vh] gap-4">
+                    <div className="flex flex-col xs:gap-5 gap-2">
                         <p className={`${styles.heading5} text-goldenbrown`}>Mailing Address:</p>
                         <p className={`${styles.paragraph} text-white`}> F & Amelia: 2390 E Camelback Rd, Suite 130, Phoenix, AZ 85016</p>
                     </div>
 
-                    <div className="flex flex-col gap-[20px]">
+                    <div className="flex flex-col xs:gap-5 gap-2">
                         <p className={`${styles.heading5} text-goldenbrown`}>Email:</p>
                         <a href='mailto:fsbi@me-pm.com' className={`${styles.paragraph} text-white hover:text-goldenbrown`}>fsbi@me-pm.com</a>
                     </div>
                 </div>
 
-                <div className="flex flex-col xs:w-1/3 w-full justify-between xs:h-[35vh]">
-                    <div className="flex flex-col gap-[20px]">
+                <div className="flex flex-col xs:w-1/3 w-full justify-between xs:h-[35vh] gap-4">
+                    <div className="flex flex-col xs:gap-5 gap-2">
                         <p className={`${styles.heading5} text-goldenbrown`}>Site Address:</p>
                         <p className={`${styles.paragraph} text-white`}>
                             1011-23 E Amelia Ave, Phoenix, AZ 85014<br />1008 E Fairmount Ave, Phoenix, AZ 85014<br />
@@ -39,7 +39,7 @@ const Footer = () => (
                             </p>
                     </div>
 
-                    <div className="flex flex-col gap-[20px]">
+                    <div className="flex flex-col xs:gap-5 gap-2">
                         <p className={`${styles.heading5} text-goldenbrown`}>Follow us:</p>
                         <div className='flex flex-row gap-[30px]'>
                             {

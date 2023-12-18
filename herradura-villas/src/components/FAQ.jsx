@@ -7,11 +7,11 @@ import { faqImage } from '../assets';
 const FAQItem = ({ title, description, isOpen, toggleItem }) => {
   return (
     <div className={`${styles.flexCenter} w-full py-2`}>
-      <div className={`${styles.boxWidth} ${isOpen ? 'gap-3' : ''} flex flex-col w-1/2 bg-gradient-box rounded-[10px] shadow xs:py-6 py-3 xs:px-9 px-4`}>
-        <div className='flex flex-row justify-between items-center' onClick={toggleItem}>
+      <div className={`${styles.boxWidth} ${isOpen ? 'gap-3' : ''} flex flex-col w-1/2 bg-gradient-box rounded-[10px] shadow sm:py-6 py-3 sm:px-9 px-4`}>
+        <div className='flex flex-row justify-between items-center gap-1' onClick={toggleItem}>
           <h5 className={`${styles.heading5} text-black`}>{title}</h5>
           <img
-            className={`faq-icon ${isOpen ? 'open' : ''} bg-yaleblue rounded-full xs:h-10 xs:w-10 h-7 w-7 cursor-pointer`}
+            className={`faq-icon ${isOpen ? 'open' : ''} bg-yaleblue rounded-full sm:h-10 sm:w-10 h-7 w-7 cursor-pointer`}
             src={isOpen ? upArrow : downArrow}
             alt="Dropdown Icon"
           />
