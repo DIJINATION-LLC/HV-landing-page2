@@ -50,8 +50,8 @@ const FAQ = () => {
             ))}
           </div>
         </div>
-        <div className='flex xs:w-1/2 aspect-square w-full'>
-          <img src={faqImage} className='aspect-square max-h-[684px] w-full' alt='' />
+        <div className='flex xs:w-1/2 h-full w-full'>
+          <img src={faqImage} className=' aspect-square max-h-[684px] w-full' alt=''/>
         </div>
       </div>
 

@@ -26,7 +26,7 @@ export const LeadGen = () => (
             </div>
 
         </div>
-        
+
     </section>
 );
 export default LeadGen

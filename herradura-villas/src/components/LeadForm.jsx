@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import styles from '../style';
 import { user, phoneicon, emailicon, dropicon, messageicon } from '../assets';
+import emailjs from '@emailjs/browser';
 
 
 const LeadForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [subject, setSubject] = useState('');
+    const [role, setrole] = useState('');
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState({});
 
@@ -18,18 +19,18 @@ const LeadForm = () => {
             user_name: name,
             user_email: email,
             user_phone: phone,
-            subject: subject,
+            role: role,
             message: message
         };
 
         try {
-            await emailjs.send('service_b6yw8g4', 'template_qpmufbi', templateParams, 'OOY5-sokRrziRFEup');
+            await emailjs.send('service_mh7zqec', 'template_81s374w', templateParams, 'Ju6KN0wf2NlRiCQK5');
             window.alert('Form submitted successfully');
             // Reset form fields after successful submission
             setName('');
             setEmail('');
             setPhone('');
-            setSubject('');
+            setrole('');
             setMessage('');
         } catch (error) {
             console.error('Failed to send email:', error);
@@ -47,8 +48,8 @@ const LeadForm = () => {
             validationErrors.email = 'Invalid email format';
         }
 
-        if (!subject) {
-            validationErrors.subject = 'Subject is required';
+        if (!role) {
+            validationErrors.role = 'Role is required';
         }
 
         if (!message) {
@@ -62,8 +63,8 @@ const LeadForm = () => {
         setErrors(validationErrors);
     };
 
-    const handleSubjectChange = (e) => {
-        setSubject(e.target.value);
+    const handleroleChange = (e) => {
+        setrole(e.target.value);
     };
 
     const handleNameChange = (e) => {
@@ -179,10 +180,10 @@ const LeadForm = () => {
                     className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5"
                 />
                 <select
-                    id="subject"
+                    id="role"
                     className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black appearance-none overflow-y-auto`}
-                    value={subject}
-                    onChange={handleSubjectChange}
+                    value={role}
+                    onChange={handleroleChange}
                     required
                 >
                     <option value="" >Select Your Role</option>
@@ -201,8 +202,8 @@ const LeadForm = () => {
                     <option value="General Question">Owner/Property Manager</option>
                     <option value="General Question" className={`${styles.paragraph}`}>Other</option>
                 </select>
-                {errors.subject && (
-                    <p className={`font-poppins text-red-500 font-normal text-[14px]`}>{errors.subject}</p>
+                {errors.role && (
+                    <p className={`font-poppins text-red-500 font-normal text-[14px]`}>{errors.role}</p>
                 )}
             </div>
 

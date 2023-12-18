@@ -1,7 +1,7 @@
 const styles = {
     boxWidth: "lg:max-w-[1240px] w-full",
 
-    heading1: "font-poppins font-bold text-white xs:text-[46px] text-[32px] xs:leading-[70px] leading-[40px] capitalize",
+    heading1: "font-poppins font-bold text-white xs:text-[46px] text-[32px] xs:leading-[70px] sm:leading-[55px] leading-[40px] capitalize",
     heading2: "font-poppins font-bold xs:text-[36px] text-[28px] xs:leading-[54px] leading-[36px] capitalize",
     heading3: "font-poppins font-semibold text-black xs:text-[30px] text-[22px] xs:leading-[35px] leading-[25px]",
     heading4: "font-poppins font-semibold text-black xs:text-[24px] text-[16px] xs:leading-[40px] leading-[30px]",
