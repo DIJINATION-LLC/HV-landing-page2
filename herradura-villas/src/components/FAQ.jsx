@@ -35,7 +35,7 @@ const FAQ = () => {
   return (
     <section className={`${styles.flexCenter} w-full py-[50px]`}>
 
-      <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[20px]`}>
+      <div className={`${styles.boxWidth} flex xs:flex-row flex-col gap-[20px] items-center`}>
         <div className='flex flex-col gap-[30px] xs:w-1/2 w-full'>
           <h2 className={`${styles.heading2} text-yaleblue`}>Frequently Asked Questions</h2>
           <div className="">
