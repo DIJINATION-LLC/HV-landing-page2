@@ -63,6 +63,12 @@ const LeadForm = () => {
         setErrors(validationErrors);
     };
 
+    const [isTermsChecked, setIsTermsChecked] = useState(false);
+
+    const handleTermsChange = (e) => {
+        setIsTermsChecked(e.target.checked);
+    };
+
     const handleroleChange = (e) => {
         setrole(e.target.value);
     };
@@ -227,7 +233,29 @@ const LeadForm = () => {
                 )}
             </div>
 
-            <button className='flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full rounded-[10px] bg-blue-gradient bg-light-golden-gradient font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none' type='submit'>Submit</button>
+            <button
+                className={`${!isTermsChecked ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-gradient bg-light-golden-gradient'
+            } flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full rounded-[10px]  font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none`}
+                type='submit'
+                disabled={!isTermsChecked} // Disable button if terms are not checked
+            >
+                Submit
+            </button>
+
+            <div className='flex flex-row items-center justify-center'>
+                <input
+                    id="terms"
+                    type="checkbox"
+                    className="mr-2"
+                    checked={isTermsChecked} // Controlled component
+                    onChange={handleTermsChange} // Update state on checkbox change
+                />
+
+                <label htmlFor="terms" className={`${styles.paragraph} text-white`}>
+                    I agree to the <a className='hover:text-goldenbrown' href="http://">Terms & Conditions</a>
+                </label>
+            </div>
+
         </form>
     );
 };

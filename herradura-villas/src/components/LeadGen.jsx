@@ -17,12 +17,6 @@ export const LeadGen = () => (
 
                 <LeadForm />
 
-                <div>
-                    <p className={`${styles.paragrah} text-white`}>
-                        Lorem ipsum dolor sit amet consectetur. Interdum penatibus tempor sit commodo magna est convallis fringilla.
-                    </p>
-                </div>
-
             </div>
 
         </div>
