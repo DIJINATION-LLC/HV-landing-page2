@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from '../style';
 import { user, phoneicon, emailicon, dropicon, messageicon } from '../assets';
 import emailjs from '@emailjs/browser';
+import Modal from './Modal';
 
 
 const LeadForm = () => {
@@ -64,9 +65,18 @@ const LeadForm = () => {
     };
 
     const [isTermsChecked, setIsTermsChecked] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const handleTermsChange = (e) => {
-        setIsTermsChecked(e.target.checked);
+      setIsTermsChecked(e.target.checked);
+    };
+  
+    const openModal = () => {
+      setShowModal(true);
+    };
+  
+    const closeModal = () => {
+      setShowModal(false);
     };
 
     const handleroleChange = (e) => {
@@ -252,10 +262,10 @@ const LeadForm = () => {
                 />
 
                 <label htmlFor="terms" className={`${styles.paragraph} text-white`}>
-                    I agree to the <a className='hover:text-goldenbrown' href="http://">Terms & Conditions</a>
+                    I agree to the <a className='hover:text-goldenbrown' onClick={openModal}>Terms & Conditions</a>
                 </label>
             </div>
-
+            <Modal show={showModal} onClose={closeModal} />
         </form>
     );
 };

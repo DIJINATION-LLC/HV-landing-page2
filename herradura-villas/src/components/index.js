@@ -8,6 +8,7 @@ import FAQ from "./FAQ";
 import LeadGen from "./LeadGen";
 import Footer from "./Footer";
 import Button from "./Button";
+import Modal from "./Modal";
 
 export{
     Bulletin,
@@ -20,4 +21,5 @@ export{
     LeadGen,
     Footer,
     Button,
+    Modal,
 }
