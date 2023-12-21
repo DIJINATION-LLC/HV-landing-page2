@@ -262,7 +262,7 @@ const LeadForm = () => {
                 />
 
                 <label htmlFor="terms" className={`${styles.paragraph} text-white`}>
-                    I agree to the <a className='hover:text-goldenbrown' onClick={openModal}>Terms & Conditions</a>
+                    I agree to the <a className='text-orange hover:text-goldenbrown' onClick={openModal}>Terms & Conditions</a>
                 </label>
             </div>
             <Modal show={showModal} onClose={closeModal} />
