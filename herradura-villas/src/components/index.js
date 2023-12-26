@@ -9,6 +9,7 @@ import LeadGen from "./LeadGen";
 import Footer from "./Footer";
 import Button from "./Button";
 import Modal from "./Modal";
+import TawkToChat from "./TawkToChat";
 
 export{
     Bulletin,
@@ -22,4 +23,5 @@ export{
     Footer,
     Button,
     Modal,
+    TawkToChat,
 }

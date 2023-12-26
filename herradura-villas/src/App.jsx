@@ -1,4 +1,4 @@
-import { Bulletin, Navbar, Hero, Opportunity, Gallery, CTA, FAQ, LeadGen, Footer } from './components'
+import { Bulletin, Navbar, Hero, Opportunity, Gallery, CTA, FAQ, LeadGen, Footer, TawkToChat } from './components'
 import styles from './style'
 import { BrowserRouter } from 'react-router-dom';
 
@@ -14,6 +14,7 @@ export const App = () => (
     </div>
     <div className=''>
       <Hero />
+      <TawkToChat/>
     </div>
     <div className='xs:px-0 px-2 sm:px-2'>
       <Opportunity />

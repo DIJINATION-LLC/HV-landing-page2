@@ -1,4 +1,4 @@
-import { facebook, youtube, instagram, twitter, slider1, slider2, slider3, gallery1 } from '../assets';
+import { facebook, youtube, instagram, twitter, slider1, slider2, slider3, gallery1, gallery2, gallery3, gallery4, gallery5 } from '../assets';
 
 
 export const navLinks = [
@@ -43,7 +43,7 @@ export const gallery = [
         id: 'gallery-2',
         alt: 'herradura villas',
         caption: 'herradura villas',
-        image: gallery1,
+        image: gallery2,
         width: '1280px',
         height: '720px',
     },
@@ -51,7 +51,7 @@ export const gallery = [
         id: 'gallery-3',
         alt: 'herradura villas',
         caption: 'herradura villas',
-        image: gallery1,
+        image: gallery3,
         width: '1280px',
         height: '720px',
     },
@@ -59,7 +59,15 @@ export const gallery = [
         id: 'gallery-4',
         alt: 'herradura villas',
         caption: 'herradura villas',
-        image: gallery1,
+        image: gallery4,
+        width: '1280px',
+        height: '720px',
+    },
+    {
+        id: 'gallery-4',
+        alt: 'herradura villas',
+        caption: 'herradura villas',
+        image: gallery5,
         width: '1280px',
         height: '720px',
     },
