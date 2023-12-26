@@ -85,7 +85,7 @@ export const Gallery = () => {
                     <img
                         src={gallery[currentImageIndex].image}
                         alt={gallery[currentImageIndex].alt}
-                        style={{ maxWidth: '100%', maxHeight: '100%', display: 'block', margin: 'auto' }}
+                        style={{ maxWidth: '100%', maxHeight: '90vh', display: 'block', margin: 'auto' }}
                     />
                     <button onClick={closeLightbox}>Close</button>
                 </Modal>
