@@ -113,3 +113,44 @@
 .slick-next:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+/* Style for Masonry grid container */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px; /* Adjust margins as needed */
+  width: auto;
+}
+
+/* Style for Masonry grid columns */
+.my-masonry-grid_column {
+  padding-left: 15px; /* Adjust space between columns */
+  background-clip: padding-box;
+}
+
+/* Style for gallery images */
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border radius or other styles */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Add hover effect if desired */
+}
+
+/* Style for the lightbox modal (you can adjust this based on your modal library or custom implementation) */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
