@@ -197,7 +197,7 @@ const LeadForm = () => {
                 />
                 <select
                     id="role"
-                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black overflow-y-auto -webkit-appearance: none;`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black overflow-y-auto`}
                     value={role}
                     onChange={handleroleChange}
                     required
@@ -226,7 +226,7 @@ const LeadForm = () => {
             <div className="mb-4 relative justify-center">
                 <img
                     src={messageicon}
-                    alt="Drop-Icon"
+                    alt="Message-Icon"
                     className="absolute left-3 xs:top-7 top-6 transform -translate-y-1/2  h-5 w-5"
                 />
                 <textarea
