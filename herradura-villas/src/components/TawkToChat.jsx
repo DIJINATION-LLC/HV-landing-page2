@@ -21,7 +21,7 @@ const TawkToChat = () => {
 
     return (
         <div>
-            <img onClick={() => { Tawk_API.toggle(); }} src={chatbot_icon} alt='' className='bg-yaleblue rounded p-2' />
+        
         </div>
     );
 };

@@ -197,7 +197,7 @@ const LeadForm = () => {
                 />
                 <select
                     id="role"
-                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black overflow-y-auto`}
+                    className={`${styles.paragraph} w-full font-poppins xs:px-[50px] px-[40px] py-[10px] pr-10 rounded-[5px] border-0 focus:outline-yaleblue focus:border-black overflow-y-auto -webkit-appearance: none;`}
                     value={role}
                     onChange={handleroleChange}
                     required
