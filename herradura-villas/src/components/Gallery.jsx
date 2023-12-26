@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import styles from '../style';
 import { gallery } from '../constants';
 import Modal from 'react-modal';
+import { cross_icon } from '../assets';
 
 export const Gallery = () => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -65,7 +66,7 @@ export const Gallery = () => {
                 <Modal
                     isOpen={lightboxOpen}
                     onRequestClose={closeLightbox}
-                    ariaHideApp={false} // Temporarily disabling accessibility features for demo purpose
+                    ariaHideApp={false}
                     style={{
                         overlay: {
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -79,16 +80,34 @@ export const Gallery = () => {
                             transform: 'translate(-50%, -50%)',
                             border: 'none',
                             padding: '0',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
                         },
                     }}
                 >
-                    <img
-                        src={gallery[currentImageIndex].image}
-                        alt={gallery[currentImageIndex].alt}
-                        style={{ maxWidth: '100%', maxHeight: '90vh', display: 'block', margin: 'auto' }}
-                    />
-                    <button onClick={closeLightbox}>Close</button>
+                    <div style={{ position: 'relative', width: '100%' }}>
+                        <img
+                            src={gallery[currentImageIndex].image}
+                            alt={gallery[currentImageIndex].alt}
+                            style={{ maxWidth: '100%', maxHeight: '90vh', display: 'block', margin: 'auto' }}
+                        />
+                        <button
+                            onClick={closeLightbox}
+                            style={{
+                                backgroundColor: '#3a3a3a',
+                                position: 'absolute',
+                                top: '5px',
+                                right: '5px',
+                                borderRadius: '5px', 
+                                padding: '5px',
+                            }}
+                        >
+                            <img src={cross_icon} alt='' className='h-4 w-4'/>
+                        </button>
+                    </div>
                 </Modal>
+
             </div>
         </section>
     );

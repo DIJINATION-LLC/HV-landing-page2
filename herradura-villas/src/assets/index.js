@@ -27,6 +27,7 @@ import favIcon from './fav-icon.svg';
 import close from './close.svg';
 import menu from './menu.svg';
 import chatbot_icon from './chatbot_icon.svg';
+import cross_icon from './cross_icon.svg';
 
 
 export {
@@ -59,4 +60,5 @@ export {
     close,
     menu,
     chatbot_icon,
+    cross_icon,
 };
