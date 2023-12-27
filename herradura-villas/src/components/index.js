@@ -1,5 +1,5 @@
 import Bulletin from "./Bulletin";
-import Navbar  from "./Navbar";
+import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Opportunity from "./Opportunity";
 import Gallery from "./Gallery";
@@ -11,7 +11,7 @@ import Button from "./Button";
 import Modal from "./Modal";
 import TawkToChat from "./TawkToChat";
 
-export{
+export {
     Bulletin,
     Navbar,
     Hero,

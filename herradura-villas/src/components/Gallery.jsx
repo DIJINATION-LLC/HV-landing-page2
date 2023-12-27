@@ -99,11 +99,11 @@ export const Gallery = () => {
                                 position: 'absolute',
                                 top: '5px',
                                 right: '5px',
-                                borderRadius: '5px', 
+                                borderRadius: '5px',
                                 padding: '5px',
                             }}
                         >
-                            <img src={cross_icon} alt='' className='h-4 w-4'/>
+                            <img src={cross_icon} alt='' className='h-4 w-4' />
                         </button>
                     </div>
                 </Modal>

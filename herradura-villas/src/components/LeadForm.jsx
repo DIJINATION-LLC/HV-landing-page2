@@ -68,15 +68,15 @@ const LeadForm = () => {
     const [showModal, setShowModal] = useState(false);
 
     const handleTermsChange = (e) => {
-      setIsTermsChecked(e.target.checked);
+        setIsTermsChecked(e.target.checked);
     };
-  
+
     const openModal = () => {
-      setShowModal(true);
+        setShowModal(true);
     };
-  
+
     const closeModal = () => {
-      setShowModal(false);
+        setShowModal(false);
     };
 
     const handleroleChange = (e) => {
@@ -245,7 +245,7 @@ const LeadForm = () => {
 
             <button
                 className={`${!isTermsChecked ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-gradient bg-light-golden-gradient'
-            } flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full rounded-[10px]  font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none`}
+                    } flex flex-row gap-3 justify-center items-center text-center xs:py-3 xs:px-5 shadow-sm py-4 px-6 w-full rounded-[10px]  font-poppins font-normal xs:text-[20px] text-[16px] text-white outline-none`}
                 type='submit'
                 disabled={!isTermsChecked} // Disable button if terms are not checked
             >
