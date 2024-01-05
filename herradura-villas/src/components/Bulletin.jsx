@@ -17,7 +17,7 @@ const Bulletin = () => (
       </div>
 
       <div className='flex flex-row'>
-        <h6 className={`${styles.heading6} text-white`}>Email us: <a href='mailto:fsbi@me-pm.com' className="text-white hover:text-goldenbrown">fsbi@me-pm.com</a></h6>
+        <h6 className={`${styles.heading6} text-white`}><a href='#leadgen' className="text-white hover:text-goldenbrown">Contact Us</a></h6>
       </div>
     </div>
     
