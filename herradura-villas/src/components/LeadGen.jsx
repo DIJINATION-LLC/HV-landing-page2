@@ -11,7 +11,7 @@ export const LeadGen = () => (
                 <div className='flex flex-col gap-[15px] items-center '>
                     <h3 className={`${styles.heading3} text-white`}>Learn more about this opportunity</h3>
                     <p className={`${styles.paragrah} text-white `}>
-                        Commercial Realestate Opportunities like this come once in a while, seize it while it lasts.
+                        Commercial real estate opportunities like this come once in a while, seize it while it lasts.
                     </p>
                 </div>
 
