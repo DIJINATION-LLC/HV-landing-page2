@@ -25,7 +25,7 @@ export const navLinks = [
     {
         id: 'makeanoffer',
         title: 'Make an Offer',
-        url: '#',
+        url: '#leadgen',
     },
 
 

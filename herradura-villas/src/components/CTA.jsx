@@ -14,7 +14,7 @@ export const CTA = () => (
             <p className={`${styles.paragrah} text-white`}>
                 Our DocSecure contains all legal and financial information necessary for you to make an informed decision.
             </p>
-            <Button to={'/'} text={'Login Here'} />
+            <Button to={'https://docsend.com/view/9vfnfcqwdt257654'} text={'Login Here'} />
 
         </div>
 
