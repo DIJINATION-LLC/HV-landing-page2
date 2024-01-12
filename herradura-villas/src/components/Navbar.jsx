@@ -25,7 +25,9 @@ export const Navbar = () => {
                     ))}
                     {navLinks.length >= 4 && (
                         <li>
-                            <Button to={navLinks[4].url} text={navLinks[4].title} />
+                            <a href={navLinks[4].url}>
+                                <Button text={navLinks[4].title} />
+                            </a>
                         </li>
                     )}
                 </ul>
