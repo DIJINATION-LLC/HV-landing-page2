@@ -18,7 +18,7 @@ const Opportunity = () => (
                     projects, making it a prime location for investment. It is also conveniently located just a mile
                     from the nearest freeway on-ramp and a short drive to Downtown Phoenix.
                 </p>
-                <Button to={'https://srv1265-files.hstgr.io/21de9feaff997e04/files/public_html/herraduravillas/memorandom%20fsbi.pdf'} text={'Learn more'} />
+                <Button to={'/'} text={'Learn more'} />
             </div>
 
             <div className='flex xs:w-1/2 w-full'>
