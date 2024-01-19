@@ -25,7 +25,7 @@ const LeadForm = () => {
         };
 
         try {
-            await emailjs.send('service_mh7zqec', 'template_81s374w', templateParams, 'Ju6KN0wf2NlRiCQK5');
+            await emailjs.send('service_tkhw9ap', 'template_81s374w', templateParams, 't-cay9LA7OFIO6KDV');
             window.alert('Form submitted successfully');
             // Reset form fields after successful submission
             setName('');
