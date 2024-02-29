@@ -154,17 +154,20 @@ export const slides = [
         heading: "Elevate Your Investment Portfolio with Prime Multifamily Space!",
         paragraph: "Situated in an area of revitalization, Herradura Villas is surrounded by new developments and residential remodel projects, making it a prime locaption for investment.",
         buttonText: "Learn More",
+        link: "#leadgen",
     },
     {
         backgroundImage: slider2,
         heading: "Seize a lucrative strategic real estate investment opportunity now!",
         paragraph: "Located in the heart of Midtown Phoenix, Herradura Villas is a newly renovated mid-century apartment community ripe for strategic investment both for firs-time and seasoned investors.",
         buttonText: "Learn More",
+        link: "#leadgen",
     },
     {
         backgroundImage: slider3,
         heading: "Explore prime real estate investment opportunities in vibrant Phoenix",
         paragraph: "A prime investment property that has been meticulously renovated with attention to detail and efficiency, including new roofs, tankless water heaters, sewer and water lines, stucco, kitchen cabinets, flooring, bathrooms, & structural reinforcement.",
         buttonText: "Learn More",
+        link: "#leadgen",
     },
 ];

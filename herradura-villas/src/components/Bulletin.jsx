@@ -17,7 +17,8 @@ const Bulletin = () => (
       </div>
 
       <div className='flex flex-row'>
-        <h6 className={`${styles.heading6} text-white`}><a href='#leadgen' className="text-white hover:text-goldenbrown">Contact us</a></h6>
+        
+        <h6 className={`${styles.heading6} text-white`}>Phone: &nbsp; <a href='tel:4802699484' className="text-white hover:text-goldenbrown">(480) 269-9484</a></h6>
       </div>
     </div>
     

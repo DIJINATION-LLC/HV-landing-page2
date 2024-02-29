@@ -35,7 +35,9 @@ const Hero = () => {
                                 <p className={`${styles.paragraph} text-white`}>
                                     {slide.paragraph}
                                 </p>
-                                <Button to={'/'} text={slide.buttonText} />
+                                <a href={slide.link}>
+                                    <Button  text={slide.buttonText} />
+                                </a>
                             </div>
                         </div>
                     </div>
