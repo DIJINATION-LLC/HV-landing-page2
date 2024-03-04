@@ -28,6 +28,7 @@ import close from './close.svg';
 import menu from './menu.svg';
 import chatbot_icon from './chatbot_icon.svg';
 import cross_icon from './cross_icon.svg';
+import phonefill from './phonefill.svg';
 
 
 export {
@@ -61,4 +62,5 @@ export {
     menu,
     chatbot_icon,
     cross_icon,
+    phonefill,
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { socialLinks } from '../constants';
 import styles from '../style';
+import { phonefill } from '../assets';
 
 const Bulletin = () => (
   <section className="flex w-full bg-yaleblue justify-center">
@@ -16,12 +17,13 @@ const Bulletin = () => (
         ))}
       </div>
 
-      <div className='flex flex-row'>
-        
-        <h6 className={`${styles.heading6} text-white`}>Phone: &nbsp; <a href='tel:4802699484' className="text-white hover:text-goldenbrown">(480) 269-9484</a></h6>
+      <div className='flex flex-row gap-2'>
+        <img src={phonefill} className={`${styles} transition-all transform hover:scale-105 ease-in-out`} />
+        <h5 className={`${styles.heading6} text-white`}>
+          <a href='tel:4802699484' className="text-white hover:text-goldenbrown">Contact us</a></h5>
       </div>
     </div>
-    
+
   </section>
 );
 
